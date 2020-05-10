@@ -12,6 +12,7 @@ class CustomersController < ApplicationController
   # GET /customers/1
   # GET /customers/1.json
   def show
+    set_customer
   end
 
   # GET /customers/new
@@ -21,6 +22,7 @@ class CustomersController < ApplicationController
 
   # GET /customers/1/edit
   def edit
+    set_customer
   end
 
   # POST /customers
@@ -47,6 +49,7 @@ class CustomersController < ApplicationController
   # PATCH/PUT /customers/1
   # PATCH/PUT /customers/1.json
   def update
+    set_customer
    #  @customer.update(customer_params)
    # flash.notice = "The customer record was updated successfully."
    # redirect_to @customer

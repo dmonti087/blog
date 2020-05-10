@@ -9,7 +9,8 @@ before_action :set_order, only: [:show, :edit, :update, :destroy]
 
   def show
     #@order = Order.find(params[:id])
-    set_order
+   set_order
+   #@customer = Customer.find(params[:customer_id])
   end
 
 def new
